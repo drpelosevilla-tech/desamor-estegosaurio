@@ -1,5 +1,5 @@
-FROM nginx:alpine 
-COPY index.html /usr/share/nginx/html/ 
-COPY style.css /usr/share/nginx/html/ 
-COPY app.js /usr/share/nginx/html/ 
+FROM nginx:stable-alpine 
+WORKDIR /usr/share/nginx/html 
+COPY . . 
 EXPOSE 80 
+CMD ["nginx","-g","daemon off;"] 
