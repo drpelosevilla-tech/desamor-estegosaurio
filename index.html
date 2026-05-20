@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🦕 El Desamor de un Estegosaurio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="navbar">
+  <div class="logo">🦕 El Desamor de un Estegosaurio</div>
+  <button class="nav-btn" onclick="openModal()">+ Añadir tragedia</button>
+</div>
+
+<div class="hero">
+  <div class="hero-left">
+    <div class="tag">Archivo emocional vivo</div>
+    <h1>Cada <span class="gradient">casi algo</span><br>deja fósiles</h1>
+    <p class="subtitle">Guarda tus historias, mide la toxicidad y crea tu museo emocional jurásico.</p>
+  </div>
+</div>
+
+<h2 class="section-title">🪐 Timeline emocional</h2>
+<div id="list"></div>
+
+<h2 class="section-title">💀 Cementerio emocional</h2>
+<div id="graveyard"></div>
+
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+
+    <h2>Nueva tragedia</h2>
+
+    <input id="nombre" placeholder="Nombre">
+    <input id="fecha" type="date">
+    <textarea id="historia" placeholder="Qué pasó..."></textarea>
+
+    <div class="checks">
+      <label><input type="checkbox" id="beso"> 💋 Beso</label>
+      <label><input type="checkbox" id="ghost"> 👻 Ghosting</label>
+      <label><input type="checkbox" id="red"> 🚩 Red flag</label>
+      <label><input type="checkbox" id="cama"> 🛏️ Dormir</label>
+      <label><input type="checkbox" id="tonteo"> 😏 Tonteo</label>
+      <label><input type="checkbox" id="carrichoche"> 🐾 Carrichoche</label>
+    </div>
+
+    <p>☠️ Toxicidad</p>
+    <input type="range" id="tox" min="0" max="100" value="0">
+
+    <button class="nav-btn" onclick="save()">Guardar</button>
+    <button class="delete-btn" onclick="closeModal()">Cerrar</button>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
