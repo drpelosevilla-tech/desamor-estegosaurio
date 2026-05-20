@@ -1,7 +1,1 @@
-{
-  "name": "desamor-estegosaurio",
-  "version": "1.0.0",
-  "scripts": {
-    "start": "python3 -m http.server $PORT"
-  }
-}
+{"name":"desamor-estegosaurio","version":"1.0.0"} 
