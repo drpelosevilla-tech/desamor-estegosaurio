@@ -2,9 +2,6 @@
   "name": "desamor-estegosaurio",
   "version": "1.0.0",
   "scripts": {
-    "start": "serve ."
-  },
-  "dependencies": {
-    "serve": "^14.2.1"
+    "start": "python3 -m http.server $PORT"
   }
 }
